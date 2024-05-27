@@ -1,0 +1,18 @@
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "Name": "Marcelo Spegiorin",
+    "email": "marcelo.mmspe@hotmail.com",
+    "password": "123marcelo"
+}
+
+###
+
+POST http://localhost:8080/users/generate_token HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "marcelo.mmspe@hotmail.com",
+    "password": "123marcelo"
+}
